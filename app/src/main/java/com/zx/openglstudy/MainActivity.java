@@ -4,7 +4,7 @@ import android.opengl.GLSurfaceView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.zx.openglstudy.gl.FirstOpenglRender;
+import com.zx.openglstudy.gl.AirHockeyRenderer;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         mGLSurfaceView = new GLSurfaceView(this);
         mGLSurfaceView.setEGLContextClientVersion(2);
-        mGLSurfaceView.setRenderer(new FirstOpenglRender(this));
+        mGLSurfaceView.setRenderer(new AirHockeyRenderer(this));
         mGLSurfaceView.setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
 
         setContentView(mGLSurfaceView);
